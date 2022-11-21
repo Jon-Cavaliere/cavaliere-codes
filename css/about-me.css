@@ -1,0 +1,359 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1
+{
+    color:#28aaee;
+    text-align: center;
+}
+
+header
+{
+    background-color: #ffffff;
+    font-weight: 500;
+    margin-top: 20px; /* Prevents Overlay of fixed email link bar on the other header elements */
+}
+
+body
+{
+   background-color:#303030;
+   font-family: "Liberation Sans", "arial"; /* Sans serif fonts */
+   margin: 0;
+   padding: 0;
+}
+
+/* This is the email bar element's style, it should stay on the top of the screen */
+#email_bar{
+    color: #ffffff; 
+    background-color: #303030;
+    position:fixed; /* Stays on the top of the screen even when scrolled down */
+    top:0; /* The very top of the screen */
+    width: 100%; /* Stretch it all the way across the screen */
+    z-index: 1;
+}
+
+#email_icon{
+   height: 12px;
+   width:auto;
+}
+
+.email_link
+{
+    color: #ffffff; 
+    background-color: #303030;
+    text-decoration: none;
+ }
+
+ /* Highlight the email link in the accentuated blue color #28aaee */
+ .email_link:hover
+ {
+    color: #28aaee; 
+    background-color: #303030;
+ }
+
+ /* Contains the links to the other pages, should be all the way on the right side of the screen */
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999997;  
+    background-color: #ffffff;
+    height:3rem;
+ }
+ 
+ .nav_bar_left {
+  font-size: 1.75rem;
+  margin: .5rem;
+  color:#28aaee
+ }
+
+ #creative_dev {
+  color:#999997;
+  font-size: 1.25rem;
+ }
+
+ .nav_bar_right ul {
+  margin:0.5rem;
+  padding:0;
+  display:flex;
+  border: none;
+}
+
+.nav_bar_right li {
+  list-style: none;
+  border-left:2px solid #28aaee;
+  line-height: 1px;
+}
+
+.nav_bar_right .last_link {
+  border-right: 2px solid #28aaee;
+}
+
+.nav_bar_right .active_page a{
+  color:#28aaee;
+  font-weight: 800;
+}
+
+.nav_bar_right li a {
+  text-decoration: none;
+  color:#999997;
+  padding:1rem;
+  display: block;
+  font-size: 1.25rem;
+}
+
+.nav_bar_right li a:hover {
+  color:#28aaee;
+  padding-top: 0.8rem; /* Make the links "hop" up a little bit */
+}
+
+.toggle_menu {
+  position:absolute; /* Force to right side of screen */
+  top: 2.15rem;
+  right: 0.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+}
+
+.toggle_menu .line {
+  height: 3px;
+  width: 100%;
+  background-color:#999997;
+  border-radius: 10px;
+}
+
+.toggle_menu:hover .line {
+  height: 3px;
+  width: 100%;
+  background-color:#28aaee;
+  border-radius: 10px;
+}
+
+ /* This is the "Jonathan Cavaliere | Creative Dev. |" Text on the left side of the navbar */
+ #nav_title_left{
+   float: left; 
+   color: #28aaee; 
+   font-size: 28px; 
+   background-color:#ffffff;
+   font-weight: 700;
+ }
+
+ /* This is the "Creative Dev" span, so that we can vary the color, weight, and font-size of that portion */
+ #nav_title_gray{
+   color:#999997;
+   font-size: 24px; 
+   background-color:#ffffff;
+   font-weight: 500;
+ }
+
+ /* We want the list to display all on one line for the top right navigation menu */
+ .nav_options_right{
+   display:flex;
+   margin:0px;
+   padding:0px;
+ }
+
+ /* These are the individual list items that compose the links for the top right navigation menu */
+ .nav_options_right li{
+   display:inline;
+   padding: 1px 15px;
+   border-right: 1px solid #bbb; /* Vertical line delination between links */
+ }
+ 
+  /* The last list item in the top right nav menu shouldn't have a vertical line*/
+ .nav_option_last{
+   display:inline;
+   padding: 1px 20px;
+   border-right: none;
+ }
+
+ /* The style for each link in the top right navigation menu */
+ .nav_bar_link
+ {
+    color:#999997;
+    font-size: 26px; 
+    text-decoration: none; /* No underline */
+ }
+
+ /* The style for the currently active link in the top right navigation menu */
+ .nav_bar_link_selected
+ {
+    color:#28aaee;
+    font-size: 28px; 
+    text-decoration:underline; /* Is underlined */
+ }
+
+ /* When a link is hovered on the top right navbar, increase font size and change color */
+ /* TODO: It seems odd that every option shifts when one option is hovered due to the increase
+          in the font size, figure out how to make the other ones stay put so the only 
+          movement is in the link being hovered over
+ */
+ .nav_bar_link:hover
+ {
+    color:#28aaee;
+    font-size: 28px; 
+ }
+
+ /* The banner image style. It's centered and takes up ALMOST the entire width of the screen */
+ #banner_img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width:99%;
+ }
+
+ h2 {
+  text-align: center;
+  color: #28aaee;
+  margin: 10px;
+  margin-top: 20px;
+  font-size: 3rem;
+ }
+
+h2::before {
+  content: "/* ";
+  color:#999997
+}
+
+h2::after {
+  content: " */";
+  color:#999997
+}
+
+h3 {
+  text-align: center;
+  color: #28aaee;
+  margin: 10px;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
+h3::before {
+  content: "/* ";
+  color:#999997
+}
+
+h3::after {
+  content: " */";
+  color:#999997
+}
+
+article {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  border-radius: 5px;
+  background-color:#0c1e34;
+  padding: 20px;
+  margin-top: 20px;
+  color:white;
+}
+
+article p {
+  color:white;
+  line-height: 1.5rem;
+}
+
+ul{
+  margin: 10px 0px;
+  color:white;
+}
+
+ul li {
+  display:inline-block;
+  padding: 0 20px;
+}
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 50%;               
+  background-color:#999997;
+  height: 3px;
+  margin: 20px auto;
+}
+
+.language-icons {
+  font-size: 3.5rem;
+  color:#28aaee;
+  margin: 25px;
+}
+
+.language-icons i{
+  padding: 0 15px;
+}
+
+.tech-icons {
+  font-size: 8.5rem;
+  color:#28aaee;
+  margin: 10px;
+}
+
+/* For the hamburger menu to appear when the screen is too small to display all the links on the navbar */
+@media (max-width: 1000px) {
+  .toggle_menu {
+    display: flex;
+  }
+
+  .nav_bar_right{
+    display:none;
+    width: 100%;
+  }
+
+  .nav_bar_right ul {
+    flex-direction: column;
+    width: 25%;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+    z-index: 0;
+    position:relative;
+  }
+
+  .nav_bar_right li {
+    text-align: center;
+    border:none;
+    line-height: 15px;
+  }
+
+  .nav_bar_right li a:hover {
+    background-color:#ffffff;
+    color:#28aaee;
+    border: 3px solid #28aaee;
+    font-weight: 600;
+  }
+
+  .nav_bar_right .last_link {
+    border:none;
+  }
+
+  .nav_bar_right.active {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  article {
+    text-align: center;
+    margin: auto;
+    width: 95%;
+    border-radius: 5px;
+    background-color:#0c1e34;
+    padding: 20px;
+    margin-top: 10px;
+    overflow:hidden
+  }
+}
