@@ -138,7 +138,7 @@ body
 }
 
  /* This is the "Jonathan Cavaliere | Creative Dev. |" Text on the left side of the navbar */
- #nav_title_left {
+ #nav_title_left{
    float: left; 
    color: #28aaee; 
    font-size: 28px; 
@@ -147,7 +147,7 @@ body
  }
 
  /* This is the "Creative Dev" span, so that we can vary the color, weight, and font-size of that portion */
- #nav_title_gray {
+ #nav_title_gray{
    color:#999997;
    font-size: 24px; 
    background-color:#ffffff;
@@ -155,35 +155,37 @@ body
  }
 
  /* We want the list to display all on one line for the top right navigation menu */
- .nav_options_right {
+ .nav_options_right{
    display:flex;
    margin:0px;
    padding:0px;
  }
 
  /* These are the individual list items that compose the links for the top right navigation menu */
- .nav_options_right li {
+ .nav_options_right li{
    display:inline;
    padding: 1px 15px;
    border-right: 1px solid #bbb; /* Vertical line delination between links */
  }
  
   /* The last list item in the top right nav menu shouldn't have a vertical line*/
- .nav_option_last {
+ .nav_option_last{
    display:inline;
    padding: 1px 20px;
    border-right: none;
  }
 
  /* The style for each link in the top right navigation menu */
- .nav_bar_link {
+ .nav_bar_link
+ {
     color:#999997;
     font-size: 26px; 
     text-decoration: none; /* No underline */
  }
 
  /* The style for the currently active link in the top right navigation menu */
- .nav_bar_link_selected {
+ .nav_bar_link_selected
+ {
     color:#28aaee;
     font-size: 28px; 
     text-decoration:underline; /* Is underlined */

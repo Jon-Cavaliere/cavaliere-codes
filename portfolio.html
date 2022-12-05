@@ -5,14 +5,19 @@
         <meta name="description" content="Creative developer and programmer portfolio">
         <meta name="author" content="Jonathan Cavaliere">
         <meta charset="UTF-8">
-        <title>Jonathan Cavaliere | Creative Dev.</title>
+        <title>Jonathan Cavaliere | Creative Dev. |</title>
+        <link href="css/portfolio.css" rel = "stylesheet" type = "text/css">
+        <script src="scripts/nav_bar_menu.js" defer></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
     </head>
-    <body style="background-color: #303030">
+    <body>
         <!--
             Top Email Bar has an email icon, email text in bold, and my email address (SHOULD stay on the screen even when scrolled down)
         -->
-        <header style = "background-color: #ffffff">
-            <p style="color: #ffffff; background-color: #303030;"><strong>Email:</strong> Cavalierejon@gmail.com</p>
+        <header>
+            <div id = "email_bar"><a class = "email_link" href = "mailto:cavalierejon@gmail.com"><img id = "email_icon" src = "images/icons8-email-64.png" alt = "Email Icon"> <strong>Email:</strong> Cavalierejon@gmail.com </a></div>
             <!--
                 Navigation Bar:
                     1) Name and tagline (Jonathan Cavaliere | Creative Dev. |) (Left Side of Screen)
@@ -22,32 +27,185 @@
                         - Active Link is highlighted in blue #28aaee
                         - All other links and '|' grayed out #999997
             -->
-                <span style="float: left; color: #28aaee; font-size: 28px; background-color: #ffffff">Jonathan Cavaliere | Creative Dev. |</span>
-                <!--
-                    Navigation bar is part of the header for every page
-                -->
-                <nav>
-                    <span style="float: right; color: #999997; font-size: 26px; background-color: #ffffff">| <a href = index.html>Home</a> | <a href = index.html>About</a> | <a href = index.html>Past Work</a> | <a href = index.html>Education</a> | <a href = index.html>Contact</a> |</span>
+                <nav class="navbar">
+                    <div class ="nav_bar_left">Jonathan Cavaliere&nbsp;|&nbsp;<span id="creative_dev">Creative Dev.</span>&nbsp;|</div>
+                    <a href="#" class="toggle_menu">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </a>
+                    <div class ="nav_bar_right">
+                        <ul>
+                            <li><a href = "index.html">Home</a> </li>
+                            <li><a href = "about-me.html">About</a> </li>
+                            <li class="active_page"><a href = "portfolio.html">Past Work</a> </li>
+                            <li><a href = "#">Education</a> </li>
+                            <li class="last_link"><a href = "contact.html">Contact</a> </li>
+                        </ul>
+                    </div>    
                 </nav>
-                <br><br>
-            <!--
-                Banner Image Goes Here:
-                    - I have placed breaks on the screen to make spacing look relative accurate as this is just the outline
-                    - The repeated text "Banner image goes here" will be replaced with the banner image 
-            -->
-            <img src = "images/banner_home.png">
         </header>
+           
         <div>
-            <!--
-                On Page Navigation Menu:
-                    - It's a list of links (About Me, Portfolio, Education, Contact)
-                    - The Links are supposed to start at the same point on the x-axis and be relatively centered
-            -->
-            <p style="text-align: center; color:#999997; font-size: 26px;">// About Me</p>
-            <p style="text-align: center; color:#999997; font-size: 26px;">// Portfolio</p>
-            <p style="text-align: center; color:#999997; font-size: 26px;">// Education</p>
-            <p style="text-align: center; color:#28aaee; font-size: 26px;">// Contact</p>
+            <img id="banner_img" src = "images/banner_about.png" alt="Banner image">
         </div>
 
+        <article>
+            <h2>Most Recent Work</h2>
+            <hr>
+            <ul class="thumbs">																		
+
+                <li>
+                    <a href="#">
+                        <img src="images/projects/space-race.png" alt="" >							            
+                        <div class="description">
+                            <span class="arrow-r"></span>
+                            <h4>Space Race</h4>
+                            <p>Arcade Style 2D Game</p>
+                            <br>
+                            <div class = "programming-icons">
+                                <i class="devicon-lua-plain-wordmark"></i> <p>Using the Love2D Framework</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                                                                
+
+                <li>
+                    <a href="#">
+                        <img src="images/projects/cg2-tool.png" alt="">							            
+                        <div class="description">
+                            <span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>CG2 Tool</h4>
+                            <p>Crossword Generator</p>
+                            <br>
+                            <div class = "programming-icons">
+                                <i class="devicon-python-plain-wordmark"></i><i class="devicon-sdl-plain"></i>
+                            </div>    
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/projects/template.jpg" alt="">							            
+                        <div class="description">
+                            <span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>Procedural 2D Lightning</h4>
+                            <p>Algorithm and Showcase</p>
+                            <br>
+                            <div class = "programming-icons">
+                                <i class="devicon-csharp-plain"></i><i class="devicon-unity-original-wordmark"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <br>
+            <h2>Past Work</h2>
+            <hr>
+            <p>
+                This is where I'll put a list of all my project links
+            </p>
+
+            <ul class="thumbs">
+                
+                <li>
+                    <a href="#">
+                        <img src="images/projects/wave-box.png" alt="">							            
+                        <div class="description">
+                            <span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>WaveBox</h4>
+                            <p>Sine Wave Sandbox & Audio Visualizer</p>
+                            <br>
+                            <div class = "programming-icons">
+                                <i class="devicon-java-plain"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/projects/celestial-constructor.png" alt="">							            
+                        <div class="description">
+                            <span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>Celestial Constructor</h4>
+                            <p>Galactic Pattern Creator</p>
+                            <br>
+                            <div class = "programming-icons">
+                                <i class="devicon-java-plain"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/projects/gol.png" alt="">							            
+                        <div class="description">
+                            <span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>Conway's Game Of Life</h4>
+                            <p>Implementation in my engine</p>
+                            <br>
+                            <div class = "programming-icons">
+                                <i class="devicon-cplusplus-plain"></i><i class="devicon-opengl-plain"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/projects/mandelbrot.png" alt="">							            
+                        <div class="description">
+                            <span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>Mandelbrot Fractal Set</h4>
+                            <p>Implementation in my engine</p>
+                            <br>
+                            <div class = "programming-icons">
+                                <i class="devicon-cplusplus-plain"></i><i class="devicon-opengl-plain"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/projects/box2d.png" alt="">							            
+                        <div class="description">
+                            <span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>Rigid Body Physics</h4>
+                            <p>Implementation of Box2D Library</p>
+                            <br>
+                            <div class = "programming-icons">
+                                <i class="devicon-cplusplus-plain"></i><i class="devicon-opengl-plain"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="images/projects/toolkit.png" alt="">							            
+                        <div class="description">
+                            <span class="arrow-r" style="opacity: 0; right: 10px;"></span>
+                            <h4>Tilemap Editor</h4>
+                            <p>2D Map Maker / Editor</p>
+                            <br>
+                            <div class = "programming-icons">
+                                <i class="devicon-cplusplus-plain"></i><i class="devicon-sdl-plain"></i>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+            
+        </article> 
+        
     </body>
 </html>

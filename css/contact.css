@@ -16,24 +16,26 @@ header
 {
     background-color: #ffffff;
     font-weight: 500;
-    margin-top: 20px; /* Prevents Overlay of fixed email link bar on the other header elements */
+    margin-top: 50px; /* Prevents Overlay of fixed email link bar on the other header elements */
 }
 
 body
 {
    background-color:#303030;
-   font-family: "Liberation Sans", "arial"; /* Sans serif fonts */
+   font-family: liberation-sans, sans-serif; /* Sans serif fonts */
    margin: 0;
    padding: 0;
 }
 
 /* This is the email bar element's style, it should stay on the top of the screen */
 #email_bar{
-    color: #ffffff; 
-    background-color: #303030;
-    position:fixed; /* Stays on the top of the screen even when scrolled down */
-    top:0; /* The very top of the screen */
-    width: 100%; /* Stretch it all the way across the screen */
+  color: #ffffff; 
+  background-color: #303030;
+  position:fixed; /* Stays on the top of the screen even when scrolled down */
+  top:0; /* The very top of the screen */
+  width: 100%; /* Stretch it all the way across the screen */
+  padding: 15px;
+  z-index: 1;
 }
 
 #email_icon{
@@ -113,7 +115,7 @@ body
 
 .toggle_menu {
   position:absolute; /* Force to right side of screen */
-  top: 2.15rem;
+  top: 4rem;
   right: 0.5rem;
   display: none;
   flex-direction: column;
