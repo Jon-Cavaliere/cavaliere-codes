@@ -12,7 +12,7 @@ h1
 header
 {
     background-color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 50px; /* Prevents Overlay of fixed email link bar on the other header elements */
 }
 
@@ -136,7 +136,7 @@ body
 }
 
 /* For the hamburger menu to appear when the screen is too small to display all the links on the navbar */
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .toggle_menu {
     display: flex;
   }

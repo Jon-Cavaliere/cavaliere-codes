@@ -15,26 +15,27 @@ h1
 header
 {
     background-color: #ffffff;
-    font-weight: 500;
-    margin-top: 20px; /* Prevents Overlay of fixed email link bar on the other header elements */
+    font-weight: 600;
+    margin-top: 50px; /* Prevents Overlay of fixed email link bar on the other header elements */
 }
 
 body
 {
    background-color:#303030;
-   font-family: "Liberation Sans", "arial"; /* Sans serif fonts */
+   font-family: liberation-sans, sans-serif; /* Sans serif fonts */
    margin: 0;
    padding: 0;
 }
 
 /* This is the email bar element's style, it should stay on the top of the screen */
 #email_bar{
-    color: #ffffff; 
-    background-color: #303030;
-    position:fixed; /* Stays on the top of the screen even when scrolled down */
-    top:0; /* The very top of the screen */
-    width: 100%; /* Stretch it all the way across the screen */
-    z-index: 1;
+  color: #ffffff; 
+  background-color: #303030;
+  position:fixed; /* Stays on the top of the screen even when scrolled down */
+  top:0; /* The very top of the screen */
+  width: 100%; /* Stretch it all the way across the screen */
+  padding: 15px;
+  z-index: 1;
 }
 
 #email_icon{
@@ -114,7 +115,7 @@ body
 
 .toggle_menu {
   position:absolute; /* Force to right side of screen */
-  top: 2.15rem;
+  top: 4rem;
   right: 0.5rem;
   display: none;
   flex-direction: column;
@@ -246,14 +247,33 @@ h3::after {
   color:#999997
 }
 
+h4 {
+  text-align: center;
+  color: #28aaee;
+  margin: 10px;
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+
+h4::before {
+  content: "/* ";
+  color:#999997
+}
+
+h4::after {
+  content: " */";
+  color:#999997
+}
+
 article {
   text-align: center;
   margin: auto;
   width: 75%;
   border-radius: 5px;
   background-color:#0c1e34;
-  padding: 20px;
+  padding: 20px 10% 20px 10%;
   margin-top: 20px;
+  margin-bottom: 20px;
   color:white;
 }
 
@@ -298,8 +318,17 @@ hr {
   margin: 10px;
 }
 
+article p a{
+  text-decoration: none;
+  color:#28aaee;
+}
+
+article p a:hover{
+  color:white;
+}
+
 /* For the hamburger menu to appear when the screen is too small to display all the links on the navbar */
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
   .toggle_menu {
     display: flex;
   }

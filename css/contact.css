@@ -15,7 +15,7 @@ h1
 header
 {
     background-color: #ffffff;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 50px; /* Prevents Overlay of fixed email link bar on the other header elements */
 }
 
@@ -273,8 +273,9 @@ body
   border-radius: 5px;
   background-color:#0c1e34;
   padding: 20px;
-  margin-top: 10px;
-  overflow:hidden
+  margin-top: 20px;
+  overflow:hidden;
+  margin-bottom: 20px;
  }
 
   /* Style inputs with type="text", select elements and textareas */
@@ -286,7 +287,7 @@ input[type=text], textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 input[type=text]:focus, textarea:focus {
