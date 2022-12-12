@@ -197,27 +197,27 @@
             in the font size, figure out how to make the other ones stay put so the only 
             movement is in the link being hovered over
    */
-   .nav_bar_link:hover
-   {
-      color:#28aaee;
-      font-size: 28px; 
-   }
+  .nav_bar_link:hover
+  {
+    color:#28aaee;
+    font-size: 28px; 
+  }
   
-   /* The banner image style. It's centered and takes up ALMOST the entire width of the screen */
-   #banner_img{
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-     width:99%;
-   }
+  /* The banner image style. It's centered and takes up ALMOST the entire width of the screen */
+  #banner_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:99%;
+  }
   
-   h2 {
+  h2 {
     text-align: center;
     color: #28aaee;
     margin: 10px;
     margin-top: 20px;
     font-size: 3rem;
-   }
+  }
   
   h2::before {
     content: "/* ";
@@ -278,6 +278,7 @@
     margin: 20px auto;
   }
   
+  /* Icons for programming languages, flexbox */
   .language-icons {
     font-size: 3.5rem;
     color:#28aaee;
@@ -287,81 +288,16 @@
   .language-icons i{
     padding: 0 15px;
   }
-  
+
+
+  /* Icons for libraries and technologies, flexbox */
   .tech-icons {
     font-size: 8.5rem;
     color:#28aaee;
     margin: 10px;
   }
   
-
-  .thumbs {
-    list-style: none;
-    position: relative;
-    padding: 0;
-    background-color: red;
-    width:98%;
-    margin: auto;
-    margin-top: 10px;
-}
-
-
-
-.thumbs li:hover {
-    box-shadow: 0 0 4px 4px #28aaee
-}
-
-.thumbs li {
-    float: left;
-    width: 30%;
-    margin: 2% 1% 1% 2%;
-    background:#999997;
-    border-radius: 6px;
-    padding: auto;
-}
-
-.thumbs li a{
-    text-decoration: none;
-}
-
-.thumbs li a img {
-    display: block;
-    border-radius: 4px;
-    margin: 2%;
-    width: 96%;
-    height:auto;
-    
-}
-
-.thumbs .description {
-    padding: 1.6rem;
-    position: relative;
-    overflow: hidden;
-}
-
-  .thumbs h4{
-    font-weight: normal;
-    font-size: 18px;
-    font-size: 1.8rem;
-    line-height: 1.2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin-bottom: 0.4rem;
-    color:black;
-  }
-
-  .thumbs p {
-    display: block;
-    margin: 0;
-    font-size: 1.4rem;
-    color: #757575;
-    line-height: 1.2;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
+  /* Icons for programming languages, flexbox */
   .programming-icons {
     display: flex;
     justify-content: space-evenly;
@@ -371,6 +307,8 @@
     padding: 10px 0;
   }
 
+
+  /* Video block section contains video and information area, flexbox */
   #video-block {
     margin: 20px 0 20px 0;
     width:80%;
@@ -387,14 +325,15 @@
     align-items: center;
   }
 
+  /* Video description section, has title, description and other various info */
   .video-desc{
     width: 49%;
     padding: 10px;
   }
 
+  /* Video description paragraph style */
   .video-desc p {
     margin-top: 20px;
-    max-width: auto;
     color:white;
     font-size: 1.5rem;
   }
@@ -460,29 +399,6 @@
         margin-top: 20px;
         overflow:hidden
     }
-
-    .thumbs h4{
-        font-weight: normal;
-        font-size: 18px;
-        font-size: 1.4rem;
-        line-height: 1.2;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin-bottom: 0.4rem;
-        color:black;
-      }
-    
-      .thumbs p {
-        display: block;
-        margin: 0;
-        font-size: 0.8rem;
-        color: #757575;
-        line-height: 1.2;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
 
       .video-desc{
         width: 90%;
