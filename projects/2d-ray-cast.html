@@ -8,6 +8,9 @@
         <title>Jonathan Cavaliere | Creative Dev.</title>
         <link href="../css/project.css" rel = "stylesheet" type = "text/css">
         <script src="../scripts/nav_bar_menu.js" defer></script>
+        <script src="../scripts/p5/p5.min.js"></script>
+        <script src="../scripts/ray-tracing/sketch.js"></script>
+        <!-- <script src="../addons/p5.sound.js"></script> -->
     </head>
     <body>
         <!--
@@ -49,17 +52,34 @@
 
         <section id="video-block">
             <div class="video-desc">
-                <h2>Space Race!</h2>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;Space Race is a 2D arcade-style space ship racing game. The gameplay is physics-based and relies on the Box2D library. The goal is to beat your best times, earn credits, and unlock new ships! It features gravitational bodies
-                    such as planet, that exert force on the player's ship.<br><br>
-                    It was written in Lua using the Love2D framework as a project for the Brightpoint Community College Programming Club. 
+                <h2>2D Ray Casting: Light</h2>
+                <p style="text-align:center">
+                    This is a 2D ray-casting demo using p5.js. I undertook this project as a method to learn more about the graphics technique as well
+                    as teach myself some javascript. 
                 </p>
+                <h3>Controls</h2>
+                <ul >
+                    <li>Mouse Drag - Adds a wall</li>
+                    <li>Mouse Wheel - Toggles Line/Draw mode</li>
+                    <li>Key 'R' - Adds a random wall</li>
+                    <li>Key 'C' - Removes all the walls (Except outer boundaries)</li>
+                    <li>Key 'D' - Removes most recently added wall</li>
+                    <li>Key 'Q' - Toggles Line/Draw mode</li>
+                </ul>
                 <h3>My Reponsibilites</h3>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;I was responsible for Physics, Art, and Menu design and implementation. I also created the features that keep track of player progress and the unlock system.
+                <p style="text-align:center">
+                    I was responsible for this entire project from planning to full implementation.
                 </p>
             </div>
-            <div class="video">
-                <iframe width="640" height="480" src="https://www.youtube.com/embed/5FVq1rS5L-Q" title="Space Race Show Case" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-desc">
+                <div id="demo">
+                    <h3>Try Me!</h3>
+                    <!--This is where the canvas goes-->
+                    <p style="text-align:center"></p>
+                </div>
+                <p style="text-align:center">
+                    Mouse draw mode adds a wall continuously like a paint brush. Line mode is simply start and end point.
+                </p>
             </div>
         </section>
     </body>

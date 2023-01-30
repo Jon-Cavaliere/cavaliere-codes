@@ -8,13 +8,14 @@
         <title>Jonathan Cavaliere | Creative Dev. |</title>
         <link href="css/contact.css" rel = "stylesheet" type = "text/css">
         <script src="scripts/nav_bar_menu.js" defer></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
     </head>
     <body>
         <!--
             Top Email Bar has an email icon, email text in bold, and my email address (SHOULD stay on the screen even when scrolled down)
         -->
         <header>
-            <div id = "email_bar"><a class = "email_link" href = "mailto:cavalierejon@gmail.com"><img id = "email_icon" src = "images/icons8-email-64.png" alt = "Email Icon"> <strong>Email:</strong> Cavalierejon@gmail.com </a></div>
+            <div id = "email_bar"><a class = "email_link" href = "mailto:jon@cavaliere.codes"><img id = "email_icon" src = "images/icons8-email-64.png" alt = "Email Icon"> <strong>Email:</strong> Jon@Cavaliere.codes </a></div>
             <!--
                 Navigation Bar:
                     1) Name and tagline (Jonathan Cavaliere | Creative Dev. |) (Left Side of Screen)
@@ -51,9 +52,8 @@
             <h2>Contact Form</h2>
             <form 
                 name= "contact_form"
-                action="#"
-                method="post">
-          
+                action="scripts/php/contact.php"
+                method="POST">
                 <label for="reason" class="required_field">Reason</label>
                 <input type="text" id="reason" name="reason" placeholder="Reason for contacting..." required>
                 <br>
@@ -76,9 +76,11 @@
                 <br>
                 <p id="contact_footnote">denotes a required field</p>
                 <br>
-
-                <input type="reset" value="Clear" class="form_button">
-                <input type="submit" value="Send" class="form_button">
+                <div id = "contact_bottom_row">
+                    <input type="reset" value="Clear" class="form_button">
+                    <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Lcy5zMkAAAAAEKUsRLHhlk_I8UNes2-KJhdoBy_"></div>
+                    <input type="submit" value="Send" class="form_button">
+                </div>
             </form>
         </section> 
         
