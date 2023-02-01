@@ -49,27 +49,49 @@
 
         <section id="video-block">
             <div class="flexbreak">
-                <h2>This Website!</h2>
+                <h2>Celestial Constructor</h2>
             </div>
+            
             <div class="video-desc">
                 <p style="text-align:center">
-                    The idea for the website began as a project for my ART-116 class at Brightpoint Community College. In this class I gained the skills necessary to design and develop a website
-                    from scratch. It covered HTML and the basics of CSS. I took this as an opportunity to create something that I've been wanting for a while: My own digital space to put myself and
-                    my work out there. To share insights as well as advertise my skills and capabilities. So, now it's here. I gained a CIW Web Development Associate certification through the process.
-                </p>
-                <h3>Purpose</h3>
-                <p style="text-align:center">
-                    I wanted my project to be practical and extend well beyond the end of that class.
-                    Now I have a platform to continue learning and experimenting with web development.
+                    This was a fun project that I completed. The goal was to create a piece of software that could be used for creative expression and interesting visuals. After playing around
+                    with it and seeing what was possible, I settled on the name Celestial Constructor because the majority of the systems that can be created look similar to galaxies. It was written in Java.
                 </p>
                 <h3>My Reponsibilites</h3>
                 <p style="text-align:center">
                     I was responsible for this entire project from planning to implementation.
                 </p>
-                
             </div>
-                <img src="../images/projects/this-site.png" alt="This Website Logo">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aYVnDL0ow3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+            <div class="flexbreak">
+                <button class="collapsible">Click to See: Celestial Constructor Screenshots</button>
+                    <div class="content">
+                        <h3>Screenshots</h3>
+                        <img src="../images/projects/celestial_constructor/img0.png" class = "img">
+                        <img src="../images/projects/celestial_constructor/img1.png" class = "img">
+                        <img src="../images/projects/celestial_constructor/img3.png" class = "img">
+                        <img src="../images/projects/celestial_constructor/img2.png" class = "img">
+                    </div>
             </div>
         </section>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>

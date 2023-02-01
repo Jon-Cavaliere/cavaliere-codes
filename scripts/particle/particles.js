@@ -1076,12 +1076,12 @@ var pJS = function(tag_id, params){
       pJS.interactivity.el.addEventListener('mousemove', function(e){
 
         if(pJS.interactivity.el == window){
-          var pos_x = e.clientX,
-              pos_y = e.clientY;
+          var pos_x = e.pageX,
+              pos_y = e.pageY;
         }
         else{
-          var pos_x = e.offsetX || e.clientX,
-              pos_y = e.offsetY || e.clientY;
+          var pos_x = e.offsetX || e.pageX,
+              pos_y = e.offsetY || e.pageY;
         }
 
         pJS.interactivity.mouse.pos_x = pos_x;

@@ -8,7 +8,7 @@
         <title>Jonathan Cavaliere | Creative Dev. |</title>
         <link href="css/about-me.css" rel = "stylesheet" type = "text/css">
         <script src="scripts/nav_bar_menu.js" defer></script>
-
+        <script src="scripts/education/disable_for_mobile.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
     </head>
@@ -65,9 +65,15 @@
             <p>
                 I graduated highschool in 2015, having taken 4 years of Java programming (including the AP Programming course) offered by my school. <br>
                 In 2016, I attended VCU for four semesters in order to take higher level Math and Programming courses. <br>
-                In 2022, I enrolled at Brightpoint Community College in order to obtain a certification in computer programming and web development. My graduation year will be 2023.<br>
-                
+                In 2022, I enrolled at Brightpoint Community College in order to obtain a certification in computer programming and web development. My graduation year will be 2023.<br>                
             </p>
+            <br>
+
+            <button class="collapsible">Click to See: CIW Site Development Associate Certification</button>
+                <div class="content">
+                    <img src="images/certified2.png" alt="CIW Site Development Exam Certificate">
+                    <img src="images/certified.png" alt="CIW Site Development Course Certificate">
+                </div>
             <br>
 
             <h3>Self Education</h3>
@@ -86,6 +92,21 @@
                 I stated this earlier in the introductory section of this page, but I wish to reiterate with emphasis that this is my continuing journey: <br><strong> Always Continue Learning. </strong> 
             </p>
         </article> 
-        
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>

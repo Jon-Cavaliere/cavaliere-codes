@@ -327,6 +327,48 @@ article p a:hover{
   color:white;
 }
 
+/* Collapsible Sections */
+.collapsible {
+  background-color:#0c1e34;
+  color: #28aaee;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.active, .collapsible:hover {
+  background-color:#28aaee;
+  color: white;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color:#0c1e34;
+  border: solid #28aaee;
+}
+
+.content img{
+  width: 80%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.collapsible:hover {
+  color: white;
+}
+
+.mobile-disabled{
+  display:none;
+}
+
 /* For the hamburger menu to appear when the screen is too small to display all the links on the navbar */
 @media (max-width: 1050px) {
   .toggle_menu {
@@ -384,5 +426,43 @@ article p a:hover{
     padding: 20px;
     margin-top: 10px;
     overflow:hidden
+  }
+
+  /* Collapsible Sections */
+  .collapsible {
+    background-color:#0c1e34;
+    color: #28aaee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  .active, .collapsible:hover {
+    background-color:#28aaee;
+    color: white;
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color:#0c1e34;
+    border: solid #28aaee;
+  }
+
+  .content img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+
+  .collapsible:hover {
+    color: white;
   }
 }

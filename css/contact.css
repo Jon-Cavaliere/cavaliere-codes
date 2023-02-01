@@ -333,6 +333,20 @@ label.required_field::before {
   /* float: left; */
 }
 
+.form_button:disabled,
+.form_button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.form_button:disabled:hover,
+.form_button[disabled]:hover{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 /* When moving the mouse over the submit button, add a darker green color */
 .form_button:hover {
   background-color:#ffffff;
@@ -347,10 +361,6 @@ label.required_field::before {
 #contact_footnote::before {
   content: '* ';
   color:red;
-}
-
-input[type=submit] {
-  /* float:right; */
 }
 
 #recaptcha {

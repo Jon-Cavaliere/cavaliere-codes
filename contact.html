@@ -9,6 +9,7 @@
         <link href="css/contact.css" rel = "stylesheet" type = "text/css">
         <script src="scripts/nav_bar_menu.js" defer></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src="scripts/captcha/validate-captcha.js"></script>
     </head>
     <body>
         <!--
@@ -78,8 +79,8 @@
                 <br>
                 <div id = "contact_bottom_row">
                     <input type="reset" value="Clear" class="form_button">
-                    <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Lcy5zMkAAAAAEKUsRLHhlk_I8UNes2-KJhdoBy_"></div>
-                    <input type="submit" value="Send" class="form_button">
+                    <div class="g-recaptcha brochure__form__captcha" data-callback="recaptchaCallback" data-sitekey="6Lcy5zMkAAAAAEKUsRLHhlk_I8UNes2-KJhdoBy_"></div>
+                    <input id="submitBttn" type="submit" value="Send" class="form_button" disabled>
                 </div>
             </form>
         </section> 

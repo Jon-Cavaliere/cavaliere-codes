@@ -354,72 +354,28 @@
     padding: 0;
   }
 
-  .video iframe {
-    box-shadow: 0 0 4px 4px #28aaee;
-  }
-
   .screenshots{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 10px;
-  }
-
-  .demo_img {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    width:60%;
     text-align: center;
     display: block;
-    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  /* Collapsible Sections */
-.collapsible {
-  background-color:#0c1e34;
-  color: #28aaee;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 1rem;
-  font-weight: 800;
-}
+  .demo_img{
+    width:80%;
+    height: auto;
+  }
 
-.active, .collapsible:hover {
-  background-color:#28aaee;
-  color: white;
-}
+  .video {
+    width: 51%;
+  }
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color:#0c1e34;
-  border: solid #28aaee;
-  text-align: center;
-}
-
-.content img{
-  width: 80%;
-  height: auto;
-  margin-bottom: .5em;
-  margin-top: .5em;
-  box-shadow: 0 0 4px 4px #28aaee;
-}
-
-.collapsible:hover {
-  color: white;
-}
-
-.flexbreak {
-  flex-basis: 100%;
-  margin-top: 2em;
-}
+  .video iframe {
+    box-shadow: 0 0 4px 4px #28aaee;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 /* For the hamburger menu to appear when the screen is too small to display all the links on the navbar */
 @media (max-width: 1050px) {

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function checkMobile(){
+        // This script is for the hamburger menu 
+        let details = navigator.userAgent.toLowerCase();       
+        /* Creating a regular expression
+        containing some mobile devices keywords
+        to search it in details string*/
+        let regexp = /android|mobile|iphone|kindle|ipad|webOS|ipad|ipod/i;
+            document.write(details);
+        console.log(details);
+        /* Using test() method to search regexp in details
+        it returns boolean value*/
+        
+        let isMobile = regexp.test(details);
+        document.write("<br>Is Mobile: " + isMobile);
+        if (isMobile) {
+            let collapsibles = document.getElementsByClassName('collapsible');
+            let contents = document.getElementsByClassName('content');
+
+            for(let i = 0; i < collapsibles.length; i++){
+                collapsibles[i].classList.toggle('mobile-disabled');
+            }
+
+            for(let i = 0; i < contents.length; i++){
+                contents[i].classList.toggle('mobile-disabled');
+            }
+        }
+    }
+    </script>
+</head>
+<body onload = "checkMobile()">
+    
+</body>
+</html>

@@ -49,27 +49,48 @@
 
         <section id="video-block">
             <div class="flexbreak">
-                <h2>This Website!</h2>
+                <h2>Mandelbrot Set</h2>
             </div>
+            
             <div class="video-desc">
                 <p style="text-align:center">
-                    The idea for the website began as a project for my ART-116 class at Brightpoint Community College. In this class I gained the skills necessary to design and develop a website
-                    from scratch. It covered HTML and the basics of CSS. I took this as an opportunity to create something that I've been wanting for a while: My own digital space to put myself and
-                    my work out there. To share insights as well as advertise my skills and capabilities. So, now it's here. I gained a CIW Web Development Associate certification through the process.
-                </p>
-                <h3>Purpose</h3>
-                <p style="text-align:center">
-                    I wanted my project to be practical and extend well beyond the end of that class.
-                    Now I have a platform to continue learning and experimenting with web development.
+                    This was a neat project that I wrote in C++ using my own game engine. It uses OpenGL for rendering and GLFW for event handling and windowing.
+                    I wanted to see what my engine was capable of, so I wrote this. It was basically a stress test. The actual code for calculating the mandelbrot set shapes was done in a vertex and fragment shader.
                 </p>
                 <h3>My Reponsibilites</h3>
                 <p style="text-align:center">
                     I was responsible for this entire project from planning to implementation.
                 </p>
-                
             </div>
-                <img src="../images/projects/this-site.png" alt="This Website Logo">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9mSSu1XDlsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+            <div class="flexbreak">
+                <button class="collapsible">Click to See: Mandelbrot Screenshots</button>
+                    <div class="content">
+                        <h3>Screenshots</h3>
+                        <img src="../images/projects/mandel/img0.PNG" class = "img">
+                        <img src="../images/projects/mandel/img1.PNG" class = "img">
+                        <img src="../images/projects/mandel/img3.PNG" class = "img">
+                    </div>
             </div>
         </section>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>
